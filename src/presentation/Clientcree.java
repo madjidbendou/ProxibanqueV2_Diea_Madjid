@@ -2,11 +2,13 @@ package presentation;
 
 import java.io.IOException;
 
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import javax.servlet.http.HttpSession;
 
 import exception.GestionException;
@@ -17,10 +19,13 @@ import service.CustomerService;
 import service.CustomerServiceImp;
 
 
+
 @WebServlet("/Clientcree")
 public class Clientcree extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+
        private CustomerDao impl = new CustomerDaoImpl();
+       
   
     public Clientcree() {
         super();
@@ -34,11 +39,14 @@ public class Clientcree extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 		HttpSession maSession = request.getSession();
+		
 		String nom = request.getParameter("nom");
 		String prenom= request.getParameter("prenom");
 		String email = request.getParameter("email");
 		String adresse = request.getParameter("adresse");
+
 
 		Client c2 = new Client(nom, prenom, email, adresse, null, null);
 		
@@ -49,6 +57,7 @@ public class Clientcree extends HttpServlet {
 		} catch (GestionException e) {
 			e.printStackTrace();
 		}
+		 
 		response.sendRedirect("liste.jsp");
 		
 		

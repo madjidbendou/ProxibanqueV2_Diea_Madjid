@@ -5,12 +5,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
 import exception.GestionException;
 import model.Client;
 
 public class CustomerDaoImpl extends AbstractDaoJdbc implements CustomerDao {
 
     @Override
+
     public Client findById(int id) throws GestionException{
     	Client c1 = null;
         Connection cn = null;
