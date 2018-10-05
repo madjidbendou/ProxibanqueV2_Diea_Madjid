@@ -2,6 +2,9 @@ package model;
 
 public class Client {
 	// Attributs
+	private int id;
+
+
 	private String nom;
 	private String prenom;
 	private String email;
@@ -68,6 +71,10 @@ public class Client {
 
 	public void setCompteepargne(CompteEpargne compteepargne) {
 		this.compteepargne = compteepargne;
+	}
+	
+	public int getId() {
+		return id;
 	}
 
 	// Méthodes
