@@ -1,5 +1,9 @@
 package model;
-
+/**
+ * 
+ * @author Mad&Diea;
+ * Ceci est la classe client qui permettra d'instancier tous les clients et de remplir la base de données avec les champs 'nom', 'prenom', 'email','adresse' et d'attribuer des comptes.
+ */
 public class Client {
 	// Attributs
 	private int id;
@@ -9,18 +13,18 @@ public class Client {
 	private String prenom;
 	private String email;
 	private String adresse;
-	private CompteCourant comptecourant;
+	private CompteCourant compteCourant;
 	private CompteEpargne compteepargne;
 
 	// Constructeurs
-	public Client(String nom, String prenom, String email, String adresse, CompteCourant comptecourant,
+	public Client(String nom, String prenom, String email, String adresse,  CompteCourant compteCourant,
 			CompteEpargne compteepargne) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
 		this.email = email;
 		this.adresse = adresse;
-		this.comptecourant = comptecourant;
+		this.compteCourant = compteCourant;
 		this.compteepargne = compteepargne;
 	}
 
@@ -58,11 +62,11 @@ public class Client {
 	}
 
 	public CompteCourant getComptecourant() {
-		return comptecourant;
+		return compteCourant;
 	}
 
 	public void setComptecourant(CompteCourant comptecourant) {
-		this.comptecourant = comptecourant;
+		this.compteCourant = comptecourant;
 	}
 
 	public CompteEpargne getCompteepargne() {
@@ -81,7 +85,7 @@ public class Client {
 	@Override
 	public String toString() {
 		return "Client [nom=" + nom + ", prenom=" + prenom + ", email=" + email + ", adresse=" + adresse
-				+ ", comptecourant=" + comptecourant + ", compteepargne=" + compteepargne + "]";
+				+ ", comptecourant=" + compteCourant + ", compteepargne=" + compteepargne + "]";
 	}
 
 }

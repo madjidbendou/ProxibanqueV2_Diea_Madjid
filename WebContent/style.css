@@ -1,0 +1,8 @@
+@charset "ISO-8859-1";
+body{
+	font-family: verdana;
+}
+tr:nth-child(even) {
+	background-color: grey;
+}
+

@@ -23,7 +23,7 @@ public class ServletEdition extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 //		String id = request.getParameter("id");
-response.sendRedirect("ClientAEditer.jsp");
+response.sendRedirect("clientAEditer.jsp");
 	}
 
 

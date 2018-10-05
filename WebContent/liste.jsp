@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<head>
+<head> <link rel ="stylesheet" href="style.css">
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
@@ -32,7 +32,7 @@
 	
 	
 		
-			<a href="ServletCreation?id=2">créer client</a>
+			<a href="ServletCreation?id=1">éditer</a>
 			
 			
 	

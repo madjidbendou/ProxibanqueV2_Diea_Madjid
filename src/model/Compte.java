@@ -1,15 +1,20 @@
 package model;
-
+/**
+ * 
+ * @author Diea_Madjid;
+ * Ceci est la classe compte qui permet d'instancier les comptes et d'attribuer un solde puis un numero de compte, le numero étant l'id de la BDD, il sera auto-incrémenté.
+ */
 public class Compte {
 	// Attributs
 	private double solde;
 	private int numero;
+	private int numeroCompte;
 
 	// Constructeurs
-	public Compte(double solde, int numero) {
+	public Compte(int numeroCompte , double solde) {
 		super();
 		this.solde = solde;
-		this.numero = numero;
+
 	}
 
 	// Getters & Setters
@@ -25,8 +30,12 @@ public class Compte {
 		return numero;
 	}
 
-	public void setNumero(int numero) {
-		this.numero = numero;
+	public int getNumeroCompte() {
+		return numeroCompte;
+	}
+
+	public void setNumeroCompte(int numeroCompte) {
+		this.numeroCompte = numeroCompte;
 	}
 
 	// Méthodes

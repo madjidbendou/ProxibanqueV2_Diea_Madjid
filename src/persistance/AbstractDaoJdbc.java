@@ -8,7 +8,12 @@ package persistance;
 	import java.sql.SQLException;
 
 //	import javax.sql.DataSource;
-
+/**
+ * 
+ * @author Diea_Madjid;
+ * Ceci est la classe abstraite AbstractDaoJdbc qui contient les méthodes close pour fermer les connexions à la BDD MySQL, et la méthode getConnectionDM qui permettra de se connecter à la BDD en invoquant cette méthode.
+ *
+ */
 	public abstract class AbstractDaoJdbc {
 
 //	    CREATE TABLE `customer` (

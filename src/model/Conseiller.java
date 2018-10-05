@@ -1,5 +1,11 @@
 package model;
+/**
+ * 
+ * @author Diea_Madjid;
+ *  * Ceci est la classe Conseiller et qui servira à l'avenir à créer plusieurs comptes Conseiller. 
 
+ *
+ */
 public class Conseiller {
 //Attributs
 	private String login;
